@@ -1,7 +1,7 @@
 <?php
 
-require __DIR__.'/../../vendor/autoload.php';
-require __DIR__.'/../sub/is_palindromic.php';
+require __DIR__.'/../../../vendor/autoload.php';
+require __DIR__.'is_palindromic.php';
 
 use Webmozart\Assert\Assert;
 
