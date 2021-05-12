@@ -39,9 +39,9 @@ function solution(array $intervals): array
 }
 
 $intervals = [[1,3],[2,6],[8,10],[15,18]];
-$result = solution($intervals); [[1,6],[8,10],[15,18]];
+$result = solution($intervals);
 Assert::eq([[1,6],[8,10],[15,18]], $result);
 
 $intervals = [[1,6],[15,18],[2,3],[8,10]];
-$result = solution($intervals); [[1,6],[8,10],[15,18]];
+$result = solution($intervals);
 Assert::eq([[1,6],[8,10],[15,18]], $result);
