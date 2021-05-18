@@ -42,10 +42,7 @@ Note that the linked lists must retain their original structure after the functi
 Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
 Output: Intersected at '8'
 Explanation: The intersected node's value is 8 (note that this must not be 0 if the two lists intersect).
-    From the head of A, it reads as [4,1,8,4,5].
-    From the head of B, it reads as [5,6,1,8,4,5].
-    There are 2 nodes before the intersected node in A;
-    There are 3 nodes before the intersected node in B.
+From the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.
 ```
 
 ## 3. Given the root of a binary search tree, and an integer k, return the kth (1-indexed) smallest element in the tree.
@@ -78,4 +75,80 @@ You may imagine that nums[-1] = nums[n] = -∞.
 Input: nums = [1,2,3,1]
 Output: 2
 Explanation: 3 is a peak element and your function should return the index number 2.
+```
+
+## 6. Strong Password
+A password is considered strong if the below conditions are all met:
+
+It has at least 6 characters and at most 20 characters.
+It contains at least one lowercase letter, at least one uppercase letter, and at least one digit.
+It does not contain three repeating characters in a row (i.e., "...aaa..." is weak, but "...aa...a..." is strong, assuming other conditions are met).
+
+Given a string password, return the minimum number of steps required to make password strong. if password is already strong, return 0.
+
+In one step, you can:
+
+Insert one character to password,
+Delete one character from password, or
+Replace one character of password with another character.
+ 
+
+### Example 1:
+```
+Input: password = "a"
+Output: 5
+```
+
+### Example 2:
+```
+Input: password = "aA1"
+Output: 3
+```
+
+### Example 3:
+```
+Input: password = "1337C0d3"
+Output: 0
+```
+
+## 7.Number of Digit One
+Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
+
+### Example 1:
+```
+Input: n = 13
+Output: 6
+```
+### Example 2:
+```
+Input: n = 0
+Output: 0
+```
+## 8. Heaters
+Winter is coming! During the contest, your first job is to design a standard heater with a fixed warm radius to warm all the houses.
+
+Every house can be warmed, as long as the house is within the heater's warm radius range. 
+
+Given the positions of houses and heaters on a horizontal line, return the minimum radius standard of heaters so that those heaters could cover all houses.
+
+Notice that all the heaters follow your radius standard, and the warm radius will the same.
+
+ 
+
+### Example 1:
+```
+Input: houses = [1,2,3], heaters = [2]
+Output: 1
+Explanation: The only heater was placed in the position 2, and if we use the radius 1 standard, then all the houses can be warmed.
+```
+### Example 2:
+```
+Input: houses = [1,2,3,4], heaters = [1,4]
+Output: 1
+Explanation: The two heater was placed in the position 1 and 4. We need to use radius 1 standard, then all the houses can be warmed.
+```
+### Example 3:
+```
+Input: houses = [1,5], heaters = [2]
+Output: 3
 ```
